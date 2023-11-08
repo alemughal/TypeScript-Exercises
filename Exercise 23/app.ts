@@ -59,14 +59,10 @@ const isThreeInArray = numbers.includes(3);
 // Print the result
 console.log("Checking Item in Array: " + isThreeInArray); // Output: true
 
-// Test whether an item is not in a array
 
 
-// Create an array
-const fruits = ["Banana", "Apples", "Mangoes"];
-
-// Check if the name "David" is not in the array
-const isApplesNotInArray = !fruits.includes("Apples");
-
-// Print the result
-console.log(isApplesNotInArray); // Output: true
+// Test whether an item is not in an array
+let fruits = ['apple', 'banana', 'mango', 'guava'];
+let fruitToCheck = 'kiwi';
+console.log(`Is ${fruitToCheck} not in the array? I predict True.`);
+console.log(!fruits.includes(fruitToCheck)); // True
