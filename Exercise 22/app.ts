@@ -1,35 +1,40 @@
-// Define an array of places to visit
-let placesToVisit: string[] = ["Islamabad", "Dubai", "New York", "Sydney", "Istanbul"];
+// Test 1: Equality check for numbers
+console.log("Is 10 === 10? I predict True.");
+console.log(10 === 10); // True, because 10 is equal to 10.
 
-// Print the array in its original order
-console.log("Original order: ", placesToVisit);
+// Test 2: Equality check for strings
+console.log("Is 'hello' === 'hello'? I predict False.");
+console.log('hello' !== 'hello'); // False, because 'hello' is not equal to 'hello'.
 
-// Print the array in alphabetical order without modifying the actual list
-let sortedArrAlphabetical: string[] = [...placesToVisit].sort();
-console.log("Alphabetical order: ", sortedArrAlphabetical);
+// Test 3: Inequality check for numbers
+console.log("Is 5 !== 8? I predict False.");
+console.log(5 !== 5); // False, because 5 is not equal to 5.
 
-// Show that the original array is still in its original order
-console.log("Original order: ", placesToVisit);
+// Test 4: Inequality check for strings
+console.log("Is 'apple' !== 'apple'? I predict False.");
+console.log('apple' !== 'apple'); // False, because 'apple' is equal to 'apple'.
 
-// Print the array in reverse alphabetical order without changing the order of the original list
-let sortedArrRevAlphabetical: string[] = [...placesToVisit].sort().reverse();
-console.log("Reverse alphabetical order: ", sortedArrRevAlphabetical);
 
-// Show that the original array is still in its original order
-console.log("Original order: ", placesToVisit);
+// Test 5: Greater than check
+console.log("Is 15 > 8? I predict True.");
+console.log(15 > 8); // True, because 15 is greater than 8.
 
-// Reverse the order of the list
-placesToVisit.reverse();
-console.log("Reversed order: ", placesToVisit);
+// Test 6: Less than check
+console.log("Is 3 < 1? I predict False.");
+console.log(3 < 1); // False, because 3 is not less than 1.
 
-// Reverse the order of the list again to get back to its original order
-placesToVisit.reverse();
-console.log("Original order: ", placesToVisit);
+// Test 7: Greater than or equal to check
+console.log("Is 20 >= 20? I predict True.");
+console.log(20 >= 20); // True, because 20 is equal to 20 (greater than or equal).
 
-// Sort the array in alphabetical order
-placesToVisit.sort();
-console.log("Sorted in alphabetical order: ", placesToVisit);
+// Test 8: Less than or equal to check
+console.log("Is 25 <= 30? I predict True.");
+console.log(25 <= 30); // True, because 25 is less than or equal to 30.
 
-// Sort the array in reverse alphabetical order
-placesToVisit.sort((a, b) => b.localeCompare(a));
-console.log("Sorted in reverse alphabetical order: ", placesToVisit);
+// Test 9: Logical AND operator
+console.log("Is (5 > 3) && (8 < 10)? I predict True.");
+console.log((5 > 3) && (8 < 10)); // True, because both conditions are true.
+
+// Test 10: Logical OR operator
+console.log("Is (2 < 1) || (6 >= 5)? I predict True.");
+console.log((2 < 1) || (6 >= 5)); // True, because one of the conditions (6 >= 5) is true.
