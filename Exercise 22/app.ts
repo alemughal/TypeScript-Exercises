@@ -1,44 +1,35 @@
-let car = "subaru";
+// Define an array of places to visit
+let placesToVisit: string[] = ["Islamabad", "Dubai", "New York", "Sydney", "Istanbul"];
 
-// True
-console.log("Is car == 'subaru' ? I predict true");
-console.log(car == "subaru");
+// Print the array in its original order
+console.log("Original order: ", placesToVisit);
 
-// True
-console.log("Is car === 'subaru' ? I predict true");
-console.log(car === "subaru");
+// Print the array in alphabetical order without modifying the actual list
+let sortedArrAlphabetical: string[] = [...placesToVisit].sort();
+console.log("Alphabetical order: ", sortedArrAlphabetical);
 
-// True
-console.log("Is car > 'honda' ? I predict true");
-console.log(car > 'honda');
+// Show that the original array is still in its original order
+console.log("Original order: ", placesToVisit);
 
-// True
-console.log("Is car < 'toyota' ? I predict true");
-console.log(car < 'toyota');
+// Print the array in reverse alphabetical order without changing the order of the original list
+let sortedArrRevAlphabetical: string[] = [...placesToVisit].sort().reverse();
+console.log("Reverse alphabetical order: ", sortedArrRevAlphabetical);
 
-// True 
-console.log("Is car <= 'subaru' ? I predict true");
-console.log(car <= 'subaru')
+// Show that the original array is still in its original order
+console.log("Original order: ", placesToVisit);
 
-// False
-console.log("Is car != 'subaru' ? I predict false");
-console.log(car != 'subaru');
+// Reverse the order of the list
+placesToVisit.reverse();
+console.log("Reversed order: ", placesToVisit);
 
-// False
-console.log("Is car == 'toyota' ? I predict false");
-console.log(car == 'toyota')
+// Reverse the order of the list again to get back to its original order
+placesToVisit.reverse();
+console.log("Original order: ", placesToVisit);
 
-// False
-console.log("Is car == 'honda' ? I predict false");
-console.log(car == 'honda');
+// Sort the array in alphabetical order
+placesToVisit.sort();
+console.log("Sorted in alphabetical order: ", placesToVisit);
 
-// False
-console.log("Is car < 'honda' ? I predict false");
-console.log(car < 'honda');
-
-// False
-console.log("Is car !< 'honda' ? I predict false");
-console.log(car !< 'honda');
-
-
-
+// Sort the array in reverse alphabetical order
+placesToVisit.sort((a, b) => b.localeCompare(a));
+console.log("Sorted in reverse alphabetical order: ", placesToVisit);
