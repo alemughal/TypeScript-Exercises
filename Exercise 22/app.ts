@@ -1,40 +1,39 @@
-// Test 1: Equality check for numbers
-console.log("Is 10 === 10? I predict True.");
-console.log(10 === 10); // True, because 10 is equal to 10.
+let car = 'subaru';
+let number = 42;
+let language = 'JavaScript';
+let fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi'];
 
-// Test 2: Equality check for strings
-console.log("Is 'hello' === 'hello'? I predict False.");
-console.log('hello' !== 'hello'); // False, because 'hello' is not equal to 'hello'.
+// Tests for equality and inequality with strings
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru' ? true : false);
 
-// Test 3: Inequality check for numbers
-console.log("Is 5 !== 8? I predict False.");
-console.log(5 !== 5); // False, because 5 is not equal to 5.
+console.log("Is language != 'Python'? I predict True.");
+console.log(language != 'Python' ? true : false);
 
-// Test 4: Inequality check for strings
-console.log("Is 'apple' !== 'apple'? I predict False.");
-console.log('apple' !== 'apple'); // False, because 'apple' is equal to 'apple'.
+// Tests using the lower case function
+console.log("Is language.toLowerCase() == 'javascript'? I predict True.");
+console.log(language.toLowerCase() == 'javascript' ? true : false);
 
+// Numerical tests
+console.log("Is number > 50? I predict False.");
+console.log(number > 50 ? true : false);
 
-// Test 5: Greater than check
-console.log("Is 15 > 8? I predict True.");
-console.log(15 > 8); // True, because 15 is greater than 8.
+console.log("Is number <= 40? I predict True.");
+console.log(number <= 40 ? true : false);
 
-// Test 6: Less than check
-console.log("Is 3 < 1? I predict False.");
-console.log(3 < 1); // False, because 3 is not less than 1.
+// Tests using "and" and "or" operators
+console.log("Is car == 'subaru' and number == 42? I predict True.");
+console.log(car == 'subaru' && number == 42 ? true : false);
 
-// Test 7: Greater than or equal to check
-console.log("Is 20 >= 20? I predict True.");
-console.log(20 >= 20); // True, because 20 is equal to 20 (greater than or equal).
+console.log("Is car == 'toyota' or number == 50? I predict False.");
+console.log(car == 'toyota' || number == 50 ? true : false);
 
-// Test 8: Less than or equal to check
-console.log("Is 25 <= 30? I predict True.");
-console.log(25 <= 30); // True, because 25 is less than or equal to 30.
+// Test whether an item is in an array
+let fruitToCheck = 'banana';
+console.log(`Is ${fruitToCheck} in the fruits array? I predict True.`);
+console.log(fruits.includes(fruitToCheck) ? true : false);
 
-// Test 9: Logical AND operator
-console.log("Is (5 > 3) && (8 < 10)? I predict True.");
-console.log((5 > 3) && (8 < 10)); // True, because both conditions are true.
-
-// Test 10: Logical OR operator
-console.log("Is (2 < 1) || (6 >= 5)? I predict True.");
-console.log((2 < 1) || (6 >= 5)); // True, because one of the conditions (6 >= 5) is true.
+// Test whether an item is not in an array
+let fruitToAvoid = 'melon';
+console.log(`Is ${fruitToAvoid} not in the fruits array? I predict False.`);
+console.log(!fruits.includes(fruitToAvoid) ? true : false);
